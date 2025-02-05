@@ -221,19 +221,7 @@ const SectionCard = ({
             />
           )}
           <div className="section-card__content" data-testid="section-card__content">
-            <div className="outline-section__status mb-1">
-              <Button
-                className="p-0 bg-transparent"
-                data-destid="section-card-highlights-button"
-                variant="tertiary"
-                onClick={handleOpenHighlightsModal}
-              >
-                <Bubble className="mr-1">
-                  {highlights.length}
-                </Bubble>
-                <p className="m-0 text-black">{messages.sectionHighlightsBadge.defaultMessage}</p>
-              </Button>
-            </div>
+
             <XBlockStatus
               isSelfPaced={isSelfPaced}
               isCustomRelativeDatesActive={isCustomRelativeDatesActive}
