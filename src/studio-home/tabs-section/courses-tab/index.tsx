@@ -136,12 +136,7 @@ const CoursesTab: React.FC<Props> = ({
         {isEnabledPagination && (
           <div className="d-flex flex-row justify-content-between my-4">
             <CoursesFilters dispatch={dispatch} locationValue={locationValue} isLoading={isLoading} />
-            <p data-testid="pagination-info">
-              {intl.formatMessage(messages.coursesPaginationInfo, {
-                length: coursesDataItems.length,
-                total: coursesCount,
-              })}
-            </p>
+
           </div>
         )}
         {hasCourses ? (
