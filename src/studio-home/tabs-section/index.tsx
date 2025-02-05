@@ -157,15 +157,7 @@ const TabsSection = ({
       );
     }
 
-    if (getConfig().ENABLE_TAGGING_TAXONOMY_PAGES === 'true') {
-      tabs.push(
-        <Tab
-          key={TABS_LIST.taxonomies}
-          eventKey={TABS_LIST.taxonomies}
-          title={intl.formatMessage(messages.taxonomiesTabTitle)}
-        />,
-      );
-    }
+
 
     return tabs;
   }, [archivedCourses, showNewCourseContainer, isLoadingCourses, isLoadingLibraries]);
