@@ -98,15 +98,7 @@ const StudioHome = () => {
       };
 
       headerButtons.push(
-        <Button
-          variant="outline-primary"
-          iconBefore={AddIcon}
-          size="sm"
-          onClick={newLibraryClick}
-          data-testid="new-library-button"
-        >
-          {intl.formatMessage(messages.addNewLibraryBtnText)}
-        </Button>,
+
       );
     }
 
