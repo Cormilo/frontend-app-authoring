@@ -19,11 +19,7 @@ const SubHeader = ({
       <h2 className="sub-header-title">Courses Editor
 
       </h2>
-      {headerActions && (
-        <ActionRow className="ml-auto flex-shrink-0 sub-header-actions">
-          {headerActions}
-        </ActionRow>
-      )}
+
     </header>
     {contentTitle && withSubHeaderContent && (
       <header className="sub-header-content">
