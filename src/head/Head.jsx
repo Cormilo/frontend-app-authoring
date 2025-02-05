@@ -8,7 +8,7 @@ import messages from './messages';
 const Head = ({ intl }) => (
   <Helmet>
     <title>
-      {intl.formatMessage(messages['course-authoring.page.title'], { siteName: getConfig().SITE_NAME })}
+    Courses Editor
     </title>
     <link rel="shortcut icon" href={getConfig().FAVICON_URL} type="image/x-icon" />
   </Helmet>
