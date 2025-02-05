@@ -236,7 +236,7 @@ const CourseOutline = ({ courseId }) => {
   return (
     <>
       <Helmet>
-        <title>{getPageHeadTitle(courseName, intl.formatMessage(messages.headingTitle))}</title>
+        <title>Course content</title>
       </Helmet>
       <Container size="xl" className="px-4">
         <section className="course-outline-container mb-4 mt-5">
