@@ -120,44 +120,6 @@ const TabsSection = ({
       );
     }
 
-    if (librariesV2Enabled) {
-      tabs.push(
-        <Tab
-          key={TABS_LIST.libraries}
-          eventKey={TABS_LIST.libraries}
-          title={(
-            <Stack gap={2} direction="horizontal">
-              {intl.formatMessage(messages.librariesTabTitle)}
-              <Badge variant="info">{intl.formatMessage(messages.librariesV2TabBetaBadge)}</Badge>
-            </Stack>
-          )}
-        >
-          <LibrariesV2Tab />
-        </Tab>,
-      );
-    }
-
-    if (librariesV1Enabled) {
-      tabs.push(
-        <Tab
-          key={TABS_LIST.legacyLibraries}
-          eventKey={TABS_LIST.legacyLibraries}
-          title={intl.formatMessage(
-            librariesV2Enabled
-              ? messages.legacyLibrariesTabTitle
-              : messages.librariesTabTitle,
-          )}
-        >
-          <LibrariesTab
-            libraries={libraries}
-            isLoading={isLoadingLibraries}
-            isFailed={isFailedLibrariesPage}
-          />
-        </Tab>,
-      );
-    }
-
-
 
     return tabs;
   }, [archivedCourses, showNewCourseContainer, isLoadingCourses, isLoadingLibraries]);
