@@ -39,47 +39,7 @@ const XBlockStatus = ({
   const isVertical = category === COURSE_BLOCK_NAMES.vertical.id;
 
   return (
-    <div className="text-secondary-400 x-small mb-1">
-      {!isVertical && (
-        <ReleaseStatus
-          isInstructorPaced={isInstructorPaced}
-          explanatoryMessage={explanatoryMessage}
-          releaseDate={releaseDate}
-          releasedToStudents={releasedToStudents}
-        />
-      )}
-      {!isVertical && (
-        <GradingTypeAndDueDate
-          isSelfPaced={isSelfPaced}
-          isInstructorPaced={isInstructorPaced}
-          isCustomRelativeDatesActive={isCustomRelativeDatesActive}
-          isTimeLimited={isTimeLimited}
-          isProctoredExam={isProctoredExam}
-          isOnboardingExam={isOnboardingExam}
-          isPracticeExam={isPracticeExam}
-          graded={graded}
-          gradingType={gradingType}
-          dueDate={dueDate}
-          relativeWeeksDue={relativeWeeksDue}
-        />
-      )}
-      {hideAfterDue && (
-        <HideAfterDueMessage isSelfPaced={isSelfPaced} />
-      )}
-      <StatusMessages
-        isVertical={isVertical}
-        staffOnlyMessage={staffOnlyMessage}
-        prereq={prereq}
-        prereqs={prereqs}
-        userPartitionInfo={userPartitionInfo}
-        hasPartitionGroupComponents={hasPartitionGroupComponents}
-      />
-      <GradingPolicyAlert
-        graded={graded}
-        gradingType={gradingType}
-        courseGraders={courseGraders}
-      />
-    </div>
+    ' '
   );
 };
 
