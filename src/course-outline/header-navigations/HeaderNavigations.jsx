@@ -63,17 +63,6 @@ const HeaderNavigations = ({
           </Button>
         </OverlayTrigger>
       )}
-      {hasSections && (
-        <Button
-          variant="outline-primary"
-          iconBefore={isSectionsExpanded ? ArrowUpIcon : ArrowDownIcon}
-          onClick={handleExpandAll}
-        >
-          {isSectionsExpanded
-            ? intl.formatMessage(messages.collapseAllButton)
-            : intl.formatMessage(messages.expandAllButton)}
-        </Button>
-      )}
 
     </nav>
   );
