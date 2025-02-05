@@ -17,7 +17,7 @@ const SubHeader = ({
   <div className={`${!hideBorder && 'border-bottom border-light-400'} mb-3`}>
     <header className="sub-header">
       <h2 className="sub-header-title">
-        <small className="sub-header-title-subtitle">{subtitle}</small>
+        <small className="sub-header-title-subtitle">Courses Editor</small>
         {breadcrumbs && (
           <div className="sub-header-breadcrumbs">{breadcrumbs}</div>
         )}
