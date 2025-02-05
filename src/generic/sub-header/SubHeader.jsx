@@ -17,16 +17,7 @@ const SubHeader = ({
   <div className={`${!hideBorder && 'border-bottom border-light-400'} mb-3`}>
     <header className="sub-header">
       <h2 className="sub-header-title">Courses Editor
-        <small className="sub-header-title-subtitle">{subtitle}</small>
-        {breadcrumbs && (
-          <div className="sub-header-breadcrumbs">{breadcrumbs}</div>
-        )}
-        {title}
-        {titleActions && (
-          <ActionRow className="ml-auto mt-2 justify-content-start">
-            {titleActions}
-          </ActionRow>
-        )}
+
       </h2>
       {headerActions && (
         <ActionRow className="ml-auto flex-shrink-0 sub-header-actions">
