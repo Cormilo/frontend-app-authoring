@@ -82,7 +82,7 @@ const StudioHome = () => {
           disabled={showNewCourseContainer}
           onClick={() => setShowNewCourseContainer(true)}
         >
-          {intl.formatMessage(messages.addNewCourseBtnText)}
+          New course
         </Button>,
       );
     }
