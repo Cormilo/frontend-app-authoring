@@ -74,22 +74,7 @@ const HeaderNavigations = ({
             : intl.formatMessage(messages.expandAllButton)}
         </Button>
       )}
-      <OverlayTrigger
-        placement="bottom"
-        overlay={(
-          <Tooltip id={intl.formatMessage(messages.viewLiveButtonTooltip)}>
-            {intl.formatMessage(messages.viewLiveButtonTooltip)}
-          </Tooltip>
-        )}
-      >
-        <Button
-          href={lmsLink}
-          target="_blank"
-          variant="outline-primary"
-        >
-          {intl.formatMessage(messages.viewLiveButton)}
-        </Button>
-      </OverlayTrigger>
+
     </nav>
   );
 };
