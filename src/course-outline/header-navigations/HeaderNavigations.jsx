@@ -40,7 +40,7 @@ const HeaderNavigations = ({
             onClick={handleNewSection}
             disabled={errors?.outlineIndexApi}
           >
-            New moldule
+            New module
           </Button>
         </OverlayTrigger>
       )}
