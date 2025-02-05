@@ -133,9 +133,6 @@ const CoursesTab: React.FC<Props> = ({
     ) : (
       <div className="courses-tab-container">
         {isShowProcessing && !isEnabledPagination && <ProcessingCourses />}
-        {isEnabledPagination && (
-
-        )}
         {hasCourses ? (
           <>
             {coursesDataItems.map(
