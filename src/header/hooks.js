@@ -60,7 +60,7 @@ export const useToolsMenuItems = courseId => {
   const items = [
     {
       href: `${studioBaseUrl}/import/${courseId}`,
-      title: intl.formatMessage(messages['header.links.import']),
+      title: 'Import Course',
     },
     {
       href: `${studioBaseUrl}/export/${courseId}`,
