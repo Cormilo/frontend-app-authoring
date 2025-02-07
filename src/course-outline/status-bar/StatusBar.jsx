@@ -136,21 +136,7 @@ const StatusBar = ({
             </Hyperlink>
           </div>
         </StatusBarItem>
-        {getConfig().ENABLE_TAGGING_TAXONOMY_PAGES === 'true' && (
-          <StatusBarItem title={intl.formatMessage(messages.courseTagsTitle)}>
-            <div className="d-flex align-items-center">
-              <TagCount count={courseTagCount} />
-              { /* eslint-disable-next-line jsx-a11y/anchor-is-valid */ }
-              <a
-                className="small ml-2"
-                href="#"
-                onClick={openManageTagsDrawer}
-              >
-                {intl.formatMessage(messages.courseManageTagsLink)}
-              </a>
-            </div>
-          </StatusBarItem>
-        )}
+
         {videoSharingEnabled && (
           <Form.Group
             size="sm"
