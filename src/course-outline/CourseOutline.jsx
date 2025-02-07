@@ -418,7 +418,7 @@ const CourseOutline = ({ courseId }) => {
                                 iconBefore={IconAdd}
                                 block
                               >
-                                {intl.formatMessage(messages.newSectionButton)}
+                                New module
                               </Button>
                             )}
                           </>
