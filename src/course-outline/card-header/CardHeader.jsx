@@ -184,24 +184,7 @@ const CardHeader = ({
 
 
 
-              {actions.draggable && (
-                <>
-                  <Dropdown.Item
-                    data-testid={`${namePrefix}-card-header__menu-move-up-button`}
-                    onClick={onClickMoveUp}
-                    disabled={!actions.allowMoveUp}
-                  >
-                    {intl.formatMessage(messages.menuMoveUp)}
-                  </Dropdown.Item>
-                  <Dropdown.Item
-                    data-testid={`${namePrefix}-card-header__menu-move-down-button`}
-                    onClick={onClickMoveDown}
-                    disabled={!actions.allowMoveDown}
-                  >
-                    {intl.formatMessage(messages.menuMoveDown)}
-                  </Dropdown.Item>
-                </>
-              )}
+
               {actions.deletable && (
                 <Dropdown.Item
                   className="border-top border-light"
