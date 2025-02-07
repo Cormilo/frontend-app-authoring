@@ -182,11 +182,7 @@ const CardHeader = ({
               </Dropdown.Item>
 
 
-              {isVertical && enableCopyPasteUnits && (
-                <Dropdown.Item onClick={onClickCopy}>
-                  {intl.formatMessage(messages.menuCopy)}
-                </Dropdown.Item>
-              )}
+
 
               {actions.draggable && (
                 <>
