@@ -115,28 +115,6 @@ const StatusBar = ({
             {checkListTitle} {intl.formatMessage(messages.checklistCompleted)}
           </Hyperlink>
         </StatusBarItem>
-        <StatusBarItem title={intl.formatMessage(messages.highlightEmailsTitle)}>
-          <div className="d-flex align-items-center">
-            {highlightsEnabledForMessaging ? (
-              <span data-testid="highlights-enabled-span" className="small">
-                {intl.formatMessage(messages.highlightEmailsEnabled)}
-              </span>
-            ) : (
-              <Button data-testid="highlights-enable-button" size="sm" onClick={openEnableHighlightsModal}>
-                {intl.formatMessage(messages.highlightEmailsButton)}
-              </Button>
-            )}
-            <Hyperlink
-              className="small ml-2"
-              destination={contentHighlightsUrl}
-              target="_blank"
-              showLaunchIcon={false}
-            >
-              {intl.formatMessage(messages.highlightEmailsLink)}
-            </Hyperlink>
-          </div>
-        </StatusBarItem>
-
         {videoSharingEnabled && (
           <Form.Group
             size="sm"
