@@ -13,11 +13,11 @@ export const useContentMenuItems = courseId => {
 
     {
       href: getPagePath(courseId, 'true', 'tabs'),
-      title: intl.formatMessage(messages['header.links.pages']),
+      title: 'Additional pages',
     },
     {
       href: `${studioBaseUrl}/assets/${courseId}`,
-      title: intl.formatMessage(messages['header.links.filesAndUploads']),
+      title: 'Uploaded files',
     },
   ];
   if (getConfig().ENABLE_VIDEO_UPLOAD_PAGE_LINK_IN_CONTENT_DROPDOWN === 'true') {
