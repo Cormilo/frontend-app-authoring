@@ -10,14 +10,7 @@ export const useContentMenuItems = courseId => {
   const studioBaseUrl = getConfig().STUDIO_BASE_URL;
 
   const items = [
-    {
-      href: `${studioBaseUrl}/course/${courseId}`,
-      title: intl.formatMessage(messages['header.links.outline']),
-    },
-    {
-      href: `${studioBaseUrl}/course_info/${courseId}`,
-      title: intl.formatMessage(messages['header.links.updates']),
-    },
+
     {
       href: getPagePath(courseId, 'true', 'tabs'),
       title: intl.formatMessage(messages['header.links.pages']),
