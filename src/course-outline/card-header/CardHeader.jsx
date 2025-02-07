@@ -187,14 +187,7 @@ const CardHeader = ({
                   {intl.formatMessage(messages.menuCopy)}
                 </Dropdown.Item>
               )}
-              {actions.duplicable && (
-                <Dropdown.Item
-                  data-testid={`${namePrefix}-card-header__menu-duplicate-button`}
-                  onClick={onClickDuplicate}
-                >
-                  {intl.formatMessage(messages.menuDuplicate)}
-                </Dropdown.Item>
-              )}
+
               {actions.draggable && (
                 <>
                   <Dropdown.Item
