@@ -243,7 +243,7 @@ const SectionCard = ({
                   block
                   onClick={handleNewSubsectionSubmit}
                 >
-                  {intl.formatMessage(messages.newSubsectionButton)}
+                  New part
                 </Button>
               )}
             </div>
