@@ -39,13 +39,13 @@ export const useSettingMenuItems = courseId => {
 
     {
       href: `${studioBaseUrl}/settings/grading/${courseId}`,
-      title: intl.formatMessage(messages['header.links.grading']),
+      title: 'Grading',
     },
 
     ...(canAccessAdvancedSettings === true
       ? [{
         href: `${studioBaseUrl}/settings/advanced/${courseId}`,
-        title: intl.formatMessage(messages['header.links.advancedSettings']),
+        title: 'Advanced settings',
       }] : []
     ),
   ];
