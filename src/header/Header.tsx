@@ -44,17 +44,17 @@ const Header = ({
   const mainMenuDropdowns = !isLibrary ? [
     {
       id: `${intl.formatMessage(messages['header.links.content'])}-dropdown-menu`,
-      buttonTitle: intl.formatMessage(messages['header.links.content']),
+      buttonTitle: 'Files and additional pages',
       items: contentMenuItems,
     },
     {
       id: `${intl.formatMessage(messages['header.links.settings'])}-dropdown-menu`,
-      buttonTitle: intl.formatMessage(messages['header.links.settings']),
+      buttonTitle: 'Settings',
       items: settingMenuItems,
     },
     {
       id: `${intl.formatMessage(messages['header.links.tools'])}-dropdown-menu`,
-      buttonTitle: intl.formatMessage(messages['header.links.tools']),
+      buttonTitle: 'Import/Export courses',
       items: toolsMenuItems,
     },
   ] : [];
