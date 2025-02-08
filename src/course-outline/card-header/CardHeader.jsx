@@ -178,7 +178,7 @@ const CardHeader = ({
                 data-testid={`${namePrefix}-card-header__menu-configure-button`}
                 onClick={onClickConfigure}
               >
-                {intl.formatMessage(messages.menuConfigure)}
+                Configure
               </Dropdown.Item>
 
 
@@ -191,7 +191,7 @@ const CardHeader = ({
                   data-testid={`${namePrefix}-card-header__menu-delete-button`}
                   onClick={onClickDelete}
                 >
-                  {intl.formatMessage(messages.menuDelete)}
+                  Delete
                 </Dropdown.Item>
               )}
             </Dropdown.Menu>
