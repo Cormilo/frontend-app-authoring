@@ -35,6 +35,8 @@ import { ToastProvider } from './generic/toast-context';
 import 'react-datepicker/dist/react-datepicker.css';
 import './index.scss';
 
+document.cookie = "openedx-language-preference=en; path=/; max-age=31536000; domain=.pt.edtechlab.local; SameSite=None; Secure";
+
 const queryClient = new QueryClient();
 
 const App = () => {
